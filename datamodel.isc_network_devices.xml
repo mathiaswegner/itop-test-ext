@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+  <classes>
+    <class id="Server">
+      <fields>
+        <field id="ipv6address" xsi:type="AttributeString" _delta="define">
+          <sql>ipv6address</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+        <field id="ipv4address" xsi:type="AttributeIPAddress" _delta="define">
+          <sql>ipv4address</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+      <presentation _delta="redefine">
+        <details>
+          <items>
+            <item id="softwares_list">
+              <rank>10</rank>
+            </item>
+            <item id="contacts_list">
+              <rank>20</rank>
+            </item>
+            <item id="documents_list">
+              <rank>30</rank>
+            </item>
+            <item id="applicationsolution_list">
+              <rank>45</rank>
+            </item>
+            <item id="physicalinterface_list">
+              <rank>50</rank>
+            </item>
+            <item id="fiberinterfacelist_list">
+              <rank>60</rank>
+            </item>
+            <item id="networkdevice_list">
+              <rank>70</rank>
+            </item>
+            <item id="san_list">
+              <rank>80</rank>
+            </item>
+            <item id="logicalvolumes_list">
+              <rank>90</rank>
+            </item>
+            <item id="providercontracts_list">
+              <rank>100</rank>
+            </item>
+            <item id="services_list">
+              <rank>110</rank>
+            </item>
+            <item id="col:col1">
+              <rank>120</rank>
+              <items>
+                <item id="fieldset:Server:baseinfo">
+                  <rank>10</rank>
+                  <items>
+                    <item id="name">
+                      <rank>10</rank>
+                    </item>
+                    <item id="org_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="status">
+                      <rank>30</rank>
+                    </item>
+                    <item id="business_criticity">
+                      <rank>40</rank>
+                    </item>
+                    <item id="location_id">
+                      <rank>50</rank>
+                    </item>
+                    <item id="rack_id">
+                      <rank>60</rank>
+                    </item>
+                    <item id="enclosure_id">
+                      <rank>70</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:moreinfo">
+                  <rank>20</rank>
+                  <items>
+                    <item id="brand_id">
+                      <rank>10</rank>
+                    </item>
+                    <item id="model_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="osfamily_id">
+                      <rank>30</rank>
+                    </item>
+                    <item id="osversion_id">
+                      <rank>40</rank>
+                    </item>
+                    <item id="managementip">
+                      <rank>45</rank>
+                    </item>
+                    <item id="ipv4address">
+                      <rank>46</rank>
+                    </item>
+                    <item id="ipv6address">
+                      <rank>47</rank>
+                    </item>
+                    <item id="oslicence_id">
+                      <rank>50</rank>
+                    </item>
+                    <item id="cpu">
+                      <rank>60</rank>
+                    </item>
+                    <item id="ram">
+                      <rank>70</rank>
+                    </item>
+                    <item id="nb_u">
+                      <rank>80</rank>
+                    </item>
+                    <item id="serialnumber">
+                      <rank>90</rank>
+                    </item>
+                    <item id="asset_number">
+                      <rank>100</rank>
+                    </item>
+                  </items>
+                </item>
+              </items>
+            </item>
+            <item id="col:col2">
+              <rank>130</rank>
+              <items>
+                <item id="fieldset:Server:Date">
+                  <rank>10</rank>
+                  <items>
+                    <item id="move2production">
+                      <rank>10</rank>
+                    </item>
+                    <item id="purchase_date">
+                      <rank>20</rank>
+                    </item>
+                    <item id="end_of_warranty">
+                      <rank>30</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:power">
+                  <rank>20</rank>
+                  <items>
+                    <item id="powerA_id">
+                      <rank>10</rank>
+                    </item>
+                    <item id="powerB_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="redundancy">
+                      <rank>30</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:otherinfo">
+                  <rank>30</rank>
+                  <items>
+                    <item id="description">
+                      <rank>10</rank>
+                    </item>
+                  </items>
+                </item>
+              </items>
+            </item>
+          </items>
+        </details>
+      </presentation>
+    </class>
+    <class id="NetworkDevice">
+      <fields>
+        <field id="ipv6address" xsi:type="AttributeString" _delta="define">
+          <sql>ipv6address</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+        <field id="ipv4address" xsi:type="AttributeIPAddress" _delta="define">
+          <sql>ipv4address</sql>
+          <default_value/>
+          <is_null_allowed>true</is_null_allowed>
+        </field>
+      </fields>
+      <presentation _delta="redefine">
+        <details>
+          <items>
+            <item id="contacts_list">
+              <rank>10</rank>
+            </item>
+            <item id="documents_list">
+              <rank>20</rank>
+            </item>
+            <item id="applicationsolution_list">
+              <rank>35</rank>
+            </item>
+            <item id="physicalinterface_list">
+              <rank>40</rank>
+            </item>
+            <item id="connectablecis_list">
+              <rank>50</rank>
+            </item>
+            <item id="providercontracts_list">
+              <rank>60</rank>
+            </item>
+            <item id="services_list">
+              <rank>70</rank>
+            </item>
+            <item id="col:col1">
+              <rank>80</rank>
+              <items>
+                <item id="fieldset:Server:baseinfo">
+                  <rank>10</rank>
+                  <items>
+                    <item id="name">
+                      <rank>10</rank>
+                    </item>
+                    <item id="org_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="status">
+                      <rank>30</rank>
+                    </item>
+                    <item id="business_criticity">
+                      <rank>40</rank>
+                    </item>
+                    <item id="location_id">
+                      <rank>50</rank>
+                    </item>
+                    <item id="rack_id">
+                      <rank>60</rank>
+                    </item>
+                    <item id="enclosure_id">
+                      <rank>70</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:moreinfo">
+                  <rank>20</rank>
+                  <items>
+                    <item id="networkdevicetype_id">
+                      <rank>10</rank>
+                    </item>
+                    <item id="brand_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="model_id">
+                      <rank>30</rank>
+                    </item>
+                    <item id="iosversion_id">
+                      <rank>40</rank>
+                    </item>
+                    <item id="managementip">
+                      <rank>45</rank>
+                    </item>
+                    <item id="ipv4address">
+                      <rank>46</rank>
+                    </item>
+                    <item id="ipv6address">
+                      <rank>47</rank>
+                    </item>
+                    <item id="ram">
+                      <rank>50</rank>
+                    </item>
+                    <item id="nb_u">
+                      <rank>60</rank>
+                    </item>
+                    <item id="serialnumber">
+                      <rank>70</rank>
+                    </item>
+                    <item id="asset_number">
+                      <rank>80</rank>
+                    </item>
+                  </items>
+                </item>
+              </items>
+            </item>
+            <item id="col:col2">
+              <rank>90</rank>
+              <items>
+                <item id="fieldset:Server:Date">
+                  <rank>10</rank>
+                  <items>
+                    <item id="move2production">
+                      <rank>10</rank>
+                    </item>
+                    <item id="purchase_date">
+                      <rank>20</rank>
+                    </item>
+                    <item id="end_of_warranty">
+                      <rank>30</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:power">
+                  <rank>20</rank>
+                  <items>
+                    <item id="powerA_id">
+                      <rank>10</rank>
+                    </item>
+                    <item id="powerB_id">
+                      <rank>20</rank>
+                    </item>
+                    <item id="redundancy">
+                      <rank>30</rank>
+                    </item>
+                  </items>
+                </item>
+                <item id="fieldset:Server:otherinfo">
+                  <rank>30</rank>
+                  <items>
+                    <item id="description">
+                      <rank>10</rank>
+                    </item>
+                  </items>
+                </item>
+              </items>
+            </item>
+          </items>
+        </details>
+      </presentation>
+    </class>
+  </classes>
+</itop_design>
